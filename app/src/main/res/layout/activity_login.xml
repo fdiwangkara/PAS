@@ -10,6 +10,7 @@
 
     <FrameLayout
 
+        android:id="@+id/frameLayout"
         android:layout_width="430dp"
         android:layout_height="352dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,10 +24,10 @@
             android:src="@drawable/splash_icon" />
 
         <ImageView
-            android:scaleType="centerCrop"
             android:id="@+id/splash_walpaper"
             android:layout_width="430dp"
             android:layout_height="352dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/splashwalpaper" />
 
         <ImageView
@@ -70,6 +71,36 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/splash_title" />
     </FrameLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bentonregular"
+        android:hint="Email"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#555050"
+        app:hintTextColor="@color/white"
+
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_login"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/edt_input"
+            android:cursorVisible="false"
+            android:fontFamily="@font/bentonregular"
+            android:paddingStart="20dp"
+            android:textColor="#92929D"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
