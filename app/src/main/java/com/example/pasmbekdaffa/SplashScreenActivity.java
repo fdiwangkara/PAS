@@ -8,6 +8,7 @@ import android.os.Handler;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,7 +16,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         Handler bebas = new Handler();
             bebas.postDelayed(() -> {
-                Intent pindah = new Intent(this, LoginActivity.class);
+                Intent pindah = new Intent(this, OnBoardingActivity.class);
                 startActivity(pindah);
             }, 3000);
     }

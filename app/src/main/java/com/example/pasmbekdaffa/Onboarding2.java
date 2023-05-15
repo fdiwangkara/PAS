@@ -1,5 +1,6 @@
 package com.example.pasmbekdaffa;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,8 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+import com.google.android.material.button.MaterialButton;
+
+
 public class Onboarding2 extends Fragment {
 
+
+    MaterialButton materialButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -24,5 +30,12 @@ public class Onboarding2 extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        materialButton = view.findViewById(R.id.nextLast);
+
+        materialButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), LoginActivity.class);
+            startActivity(intent);
+        });
     }
 }
