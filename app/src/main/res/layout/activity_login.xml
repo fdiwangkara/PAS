@@ -73,9 +73,22 @@
     </FrameLayout>
 
 
+    <TextView
+        android:id="@+id/signin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bentonbold"
+        android:text="Login To Your Account"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
 
     <com.google.android.material.textfield.TextInputLayout
-
+        android:id="@+id/user_login"
+        android:layout_marginTop="25dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -87,12 +100,12 @@
         android:textColorHint="#555050"
         app:hintTextColor="@color/white"
 
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+        app:layout_constraintTop_toBottomOf="@+id/signin_text">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/user_login"
+
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:background="@drawable/edt_input"
             android:cursorVisible="false"
             android:fontFamily="@font/bentonregular"
@@ -101,6 +114,124 @@
             android:textSize="15sp"
             tools:ignore="RtlSymmetry" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_Password"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bentonregular"
+        android:hint="Password"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#555050"
+        app:hintTextColor="@color/white"
+
+        app:layout_constraintTop_toBottomOf="@+id/user_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edt_input"
+            android:cursorVisible="false"
+            android:fontFamily="@font/bentonregular"
+            android:paddingStart="20dp"
+            android:textColor="#92929D"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/Countinue_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bentonbold"
+        android:text="Or Continue With"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_Password" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:layout_marginTop="25dp"
+        app:icon="@drawable/facebook"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#252525"
+        android:fontFamily="@font/bentosanmedium"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Facebook"
+
+        android:textSize="19dp"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Countinue_text" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:layout_marginTop="25dp"
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="#252525"
+        android:fontFamily="@font/bentosanmedium"
+        android:paddingLeft="37dp"
+        android:paddingTop="20dp"
+        android:paddingRight="37dp"
+        android:paddingBottom="20dp"
+        android:text="Google"
+        android:textSize="19dp"
+        app:cornerRadius="14dp"
+        app:icon="@drawable/google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Countinue_text" />
+
+
+    <TextView
+        android:layout_marginTop="120dp"
+        android:id="@+id/forgot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bentosanmedium"
+        android:text="Forgot Your Password?"
+        android:textColor="@color/ui_color"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Countinue_text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="@color/ui_color"
+        android:fontFamily="@font/bentonbold"
+        android:paddingLeft="55dp"
+        android:paddingTop="20dp"
+        android:paddingRight="55dp"
+        android:paddingBottom="20dp"
+        android:text="Next"
+        android:textSize="20dp"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Countinue_text" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
