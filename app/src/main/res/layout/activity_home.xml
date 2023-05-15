@@ -380,7 +380,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="30dp"
                     android:fontFamily="@font/bentonbold"
-                    android:text="$15"
+                    android:text="$150"
                     android:textColor="#FEB536"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
