@@ -13,15 +13,6 @@
         android:theme="@style/Theme.PASMbekDaffa"
         tools:targetApi="31">
         <activity
-            android:name=".ChatDetailsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CongratsPaymentSuccesfull"
-            android:exported="false" />
-        <activity
             android:name=".CongratsBerhasilLogin"
             android:exported="false" />
         <activity
