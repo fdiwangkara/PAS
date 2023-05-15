@@ -145,6 +145,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
 
+        android:id="@+id/user_pass"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -160,7 +161,6 @@
         app:layout_constraintTop_toBottomOf="@+id/user_email">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/user_pass"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/edt_input"
@@ -171,5 +171,35 @@
             android:textSize="15sp"
             tools:ignore="RtlSymmetry" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@color/ui_color"
+        android:fontFamily="@font/bentonbold"
+        android:paddingLeft="55dp"
+        android:paddingTop="20dp"
+        android:paddingRight="55dp"
+        android:paddingBottom="20dp"
+        android:text="Next"
+        android:textSize="20dp"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_pass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have an Account?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next"
+        android:textColor="@color/ui_color"
+        android:layout_marginTop="10dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
