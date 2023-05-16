@@ -45,6 +45,193 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/notifTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bentonbold"
+            android:text="Notification"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/google"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view3"
+            card_view:cardCornerRadius="22dp"
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="#252525"
+            android:backgroundTint="#80252525"
+            app:layout_constraintTop_toBottomOf="@id/notifTitle" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/orderedImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/ordered"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.38" />
+
+                <TextView
+                    android:id="@+id/orderedTitle"
+                    android:layout_width="234dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="your order has been taken by the driver"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/orderedImage"
+                    app:layout_constraintStart_toEndOf="@+id/orderedImage"
+                    app:layout_constraintTop_toTopOf="@+id/orderedImage"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentonregular"
+                    android:text="Recently"
+                    android:textColor="#7D7D7D"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@+id/orderedImage"
+                    app:layout_constraintTop_toBottomOf="@+id/orderedTitle"
+                    android:layout_marginStart="10dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/notif2"
+            card_view:cardCornerRadius="22dp"
+            android:layout_width="360dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="#252525"
+            android:backgroundTint="#80252525"
+            app:layout_constraintTop_toBottomOf="@id/card_view3" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/topUpImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/topup"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.38" />
+
+                <TextView
+                    android:id="@+id/topUpTitle"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="Top up for $100 was Succsessful"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topUpImage"
+                    app:layout_constraintStart_toEndOf="@+id/topUpImage"
+                    app:layout_constraintTop_toTopOf="@+id/topUpImage"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentonregular"
+                    android:text="05.36 Pm"
+                    android:textColor="#7D7D7D"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@+id/topUpImage"
+                    app:layout_constraintTop_toBottomOf="@+id/topUpTitle"
+                    android:layout_marginStart="10dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/notif3"
+            card_view:cardCornerRadius="22dp"
+            android:layout_width="360dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="#252525"
+            android:backgroundTint="#80252525"
+            app:layout_constraintTop_toBottomOf="@id/notif2" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/canceledImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/canceled"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.38" />
+
+                <TextView
+                    android:id="@+id/canceledTitle"
+                    android:layout_width="234dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="Your order has been canceled"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/canceledImage"
+                    app:layout_constraintStart_toEndOf="@+id/canceledImage"
+                    app:layout_constraintTop_toTopOf="@+id/canceledImage"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentonregular"
+                    android:text="20 May 2023"
+                    android:textColor="#7D7D7D"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@+id/canceledImage"
+                    app:layout_constraintTop_toBottomOf="@+id/canceledTitle"
+                    android:layout_marginStart="10dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
