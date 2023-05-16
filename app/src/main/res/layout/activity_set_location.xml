@@ -45,6 +45,117 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/setTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bentonbold"
+            android:text="Set Your Location"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/google"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/setSubTitle"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bentonbook"
+            android:lineHeight="22dp"
+            android:text="This data will be displayed in your account profile for security"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setTitle"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/locBack"
+            card_view:cardCornerRadius="22dp"
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="#252525"
+            android:backgroundTint="#80252525"
+            app:layout_constraintTop_toBottomOf="@id/setSubTitle" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+               <ImageView
+                   android:id="@+id/setLocImage"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/setloc"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="Your Location"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/setLocImage"
+                    app:layout_constraintStart_toEndOf="@+id/setLocImage"
+                    app:layout_constraintTop_toTopOf="@+id/setLocImage" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/setLocButton"
+                    android:layout_width="322dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#7B7B7B"
+                    android:fontFamily="@font/bentonbold"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="55dp"
+                    android:text="Set Location"
+                    android:textSize="14dp"
+                    app:cornerRadius="14dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextLast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/ui_color"
+            android:fontFamily="@font/bentonbold"
+            android:paddingLeft="55dp"
+            android:paddingTop="20dp"
+            android:paddingRight="55dp"
+            android:paddingBottom="20dp"
+            android:text="Next"
+            android:textSize="20dp"
+            app:cornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locBack"
+            android:layout_marginTop="375dp"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
