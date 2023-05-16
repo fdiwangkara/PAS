@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PASMbekDaffa"
         tools:targetApi="31">
         <activity
+            android:name=".SetLocationMap"
+            android:exported="false" />
+        <activity
             android:name=".Filter"
             android:exported="false" />
         <activity

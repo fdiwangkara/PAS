@@ -112,7 +112,6 @@
 
         <com.google.android.material.button.MaterialButton
             app:iconSize="24dp"
-            android:layout_marginTop="25dp"
             android:id="@+id/googlee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,7 +119,9 @@
             android:layout_marginStart="25dp"
             android:backgroundTint="#252525"
             android:fontFamily="@font/bentosanmedium"
+
             android:paddingTop="20dp"
+            android:layout_marginTop="15dp"
             android:paddingRight="24dp"
             android:paddingLeft="24dp"
             android:paddingBottom="20dp"
@@ -133,7 +134,7 @@
 
         <com.google.android.material.button.MaterialButton
             app:iconSize="24dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:id="@+id/Menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,6 +146,7 @@
             android:paddingRight="24dp"
             android:paddingLeft="24dp"
             android:paddingBottom="20dp"
+
             android:text="Menu"
             app:iconGravity="textEnd"
             android:textSize="17dp"
@@ -165,47 +167,211 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/googlee" />
 
-<!--        <com.google.android.material.button.MaterialButton-->
-<!--            app:iconSize="24dp"-->
-<!--            android:layout_marginTop="25dp"-->
-<!--            android:id="@+id/Restaurant"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginStart="25dp"-->
-<!--            android:backgroundTint="#252525"-->
-<!--            android:fontFamily="@font/bentosanmedium"-->
-<!--            android:paddingTop="20dp"-->
-<!--            android:paddingRight="24dp"-->
-<!--            android:paddingLeft="24dp"-->
-<!--            android:paddingBottom="20dp"-->
-<!--            android:text="Restaurant"-->
-<!--            app:iconGravity="textEnd"-->
-<!--            android:textSize="17dp"-->
-<!--            app:cornerRadius="23dp"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/Nearest" />-->
+        <com.google.android.material.button.MaterialButton
+            app:iconSize="24dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="#252525"
+            android:fontFamily="@font/bentosanmedium"
+            android:paddingTop="20dp"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:paddingBottom="20dp"
+            android:text="1 Km"
+            app:iconGravity="textEnd"
+            android:textSize="17dp"
+            app:cornerRadius="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Location" />
 
-<!--        <com.google.android.material.button.MaterialButton-->
-<!--            app:iconSize="24dp"-->
-<!--            android:layout_marginTop="25dp"-->
-<!--            android:id="@+id/Menu"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginStart="25dp"-->
-<!--            android:backgroundTint="#252525"-->
-<!--            android:fontFamily="@font/bentosanmedium"-->
-<!--            android:paddingTop="20dp"-->
-<!--            android:paddingRight="24dp"-->
-<!--            android:paddingLeft="24dp"-->
-<!--            android:paddingBottom="20dp"-->
-<!--            android:text="Menu"-->
-<!--            app:iconGravity="textEnd"-->
-<!--            android:textSize="17dp"-->
-<!--            app:cornerRadius="23dp"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/googlee"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/Nearest" />-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Lebih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#252525"
+            android:fontFamily="@font/bentosanmedium"
+            android:paddingLeft="24dp"
+            android:paddingTop="20dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="20dp"
+            android:text=">10 Km"
+            android:textSize="17dp"
+            app:cornerRadius="23dp"
+            app:iconGravity="textEnd"
+            app:iconSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/Restaurant"
+            app:layout_constraintTop_toBottomOf="@+id/Location" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Kurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#252525"
+            android:fontFamily="@font/bentosanmedium"
+            android:paddingLeft="24dp"
+            android:paddingTop="20dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="20dp"
+            android:text="<10 Km"
+            android:textSize="17dp"
+            app:cornerRadius="23dp"
+            app:iconGravity="textEnd"
+            app:iconSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/Lebih"
+            app:layout_constraintTop_toBottomOf="@+id/Location" />
+
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:id="@+id/Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bentonbold"
+            android:text="Type"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Restaurant" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            app:iconSize="24dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Cake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="#252525"
+            android:fontFamily="@font/bentosanmedium"
+            android:paddingTop="20dp"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:paddingBottom="20dp"
+            android:text="Cake"
+            app:iconGravity="textEnd"
+            android:textSize="17dp"
+            app:cornerRadius="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Food" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Soup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#252525"
+            android:fontFamily="@font/bentosanmedium"
+            android:paddingLeft="24dp"
+            android:paddingTop="20dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="20dp"
+            android:text="Soup"
+            android:textSize="17dp"
+            app:cornerRadius="23dp"
+            app:iconGravity="textEnd"
+            app:iconSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/Cake"
+            app:layout_constraintTop_toBottomOf="@+id/Food" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#252525"
+            android:fontFamily="@font/bentosanmedium"
+            android:paddingLeft="24dp"
+            android:paddingTop="20dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="20dp"
+            android:text="Main Course"
+            android:textSize="17dp"
+            app:cornerRadius="23dp"
+            app:iconGravity="textEnd"
+            app:iconSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/Soup"
+            app:layout_constraintTop_toBottomOf="@+id/Food"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Apetizzer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#252525"
+            android:fontFamily="@font/bentosanmedium"
+            android:paddingLeft="24dp"
+            android:paddingTop="20dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="20dp"
+            android:text="Apetizzer"
+            android:textSize="17dp"
+            app:cornerRadius="23dp"
+            app:iconGravity="textEnd"
+            app:iconSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Cake" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Dessert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#252525"
+            android:fontFamily="@font/bentosanmedium"
+            android:paddingLeft="24dp"
+            android:paddingTop="20dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="20dp"
+            android:text="Dessert"
+            android:textSize="17dp"
+            app:cornerRadius="23dp"
+            app:iconGravity="textEnd"
+            app:iconSize="24dp"
+            app:layout_constraintStart_toEndOf="@id/Apetizzer"
+            app:layout_constraintTop_toBottomOf="@+id/Cake" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/ui_color"
+            android:fontFamily="@font/bentonbold"
+            android:paddingLeft="55dp"
+            android:paddingTop="20dp"
+            android:paddingRight="55dp"
+            android:paddingBottom="20dp"
+            android:text="Next"
+            android:textSize="20dp"
+            app:cornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Dessert" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
