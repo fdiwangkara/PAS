@@ -23,6 +23,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/google"
+            android:layout_width="60dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="#251c13"
+            android:layout_marginTop="38dp"
+            android:paddingLeft="45dp"
+            android:paddingTop="39.5dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="20dp"
+            android:text="test"
+            android:textSize="19dp"
+            app:cornerRadius="22dp"
+            app:icon="@drawable/baseline_arrow_back_ios_24"
+            app:iconGravity="textTop"
+            app:iconSize="@android:"
+            app:iconTint="#ba6317"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
