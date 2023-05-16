@@ -15,6 +15,7 @@
         android:background="@color/main_color">
 
 
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/google"
             android:layout_width="60dp"
@@ -36,6 +37,7 @@
             app:iconTint="#ba6317"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
 <!--        <androidx.cardview.widget.CardView-->
 <!--            app:layout_constraintTop_toBottomOf="@+id/google"-->
