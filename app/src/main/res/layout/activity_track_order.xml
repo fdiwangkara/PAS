@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".SetLocation"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/google"
+            android:layout_width="60dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="#251c13"
+            android:layout_marginTop="38dp"
+            android:paddingLeft="45dp"
+            android:paddingTop="39.5dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="20dp"
+            android:text="test"
+            android:textSize="19dp"
+            app:cornerRadius="22dp"
+            app:icon="@drawable/baseline_arrow_back_ios_24"
+            app:iconGravity="textTop"
+            app:iconSize="@android:"
+            app:iconTint="#ba6317"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/google"-->
+<!--            android:id="@+id/deliverLoc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_marginTop="300dp"-->
+<!--            android:background="#0D0D0D"-->
+<!--            android:backgroundTint="#0D0D0D"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            card_view:cardCornerRadius="22dp">-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:paddingBottom="10dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/headDeliver"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:fontFamily="@font/bentonregular"-->
+<!--                    android:text="Your Location"-->
+<!--                    android:textSize="16dp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/deliverImage"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:src="@drawable/setloc"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/headDeliver" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/deliverTitle"-->
+<!--                    android:layout_width="256dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="@font/bentosanmedium"-->
+<!--                    android:lineHeight="22.5dp"-->
+<!--                    android:text="4517 Washington Ave. Manchester, Kentucky 39495"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="15dp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/deliverImage"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/deliverImage"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/deliverImage" />-->
+
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/setLocButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="67dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:backgroundTint="@color/ui_color"-->
+<!--                    android:fontFamily="@font/bentonbold"-->
+<!--                    android:paddingLeft="55dp"-->
+<!--                    android:paddingRight="55dp"-->
+
+<!--                    android:text="Set Location"-->
+<!--                    android:textSize="14dp"-->
+<!--                    app:cornerRadius="14dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/deliverTitle" />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
