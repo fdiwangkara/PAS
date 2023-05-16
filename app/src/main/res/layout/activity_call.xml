@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Call"
     android:background="@color/main_color"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     >
 
 
@@ -29,7 +30,112 @@
             android:src="@drawable/splashwalpaper" />
     </FrameLayout>
 
+    <com.google.android.material.card.MaterialCardView
+        app:strokeWidth="7dp"
+        app:strokeColor="@color/ui_color"
+        android:id="@+id/profilePic"
+        card_view:cardCornerRadius="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#80252525"
+        app:layout_constraintBottom_toTopOf="@id/callerName" >
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/callerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bentonbold"
+        android:text="Daffa Jago"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bentonregular"
+        android:text="25:35 Min"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callerName"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/google"
+        android:layout_width="80dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#2253E88B"
+        android:paddingLeft="37dp"
+        android:paddingTop="40dp"
+        android:paddingRight="37dp"
+        android:paddingBottom="20dp"
+        android:text="test"
+        android:textSize="19dp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/volume_off"
+        app:iconGravity="textTop"
+        app:iconSize="@android:"
+        app:iconTint="@color/ui_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="-100dp"/>
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/reject"
+        android:layout_width="80dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#ff0000"
+        android:paddingLeft="37dp"
+        android:paddingTop="40dp"
+        android:paddingRight="37dp"
+        android:paddingBottom="20dp"
+        android:text="test"
+        android:textSize="19dp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/hang_up"
+        app:iconGravity="textTop"
+        app:iconSize="@android:"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="100dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
