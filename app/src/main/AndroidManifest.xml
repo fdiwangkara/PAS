@@ -13,6 +13,18 @@
         android:theme="@style/Theme.PASMbekDaffa"
         tools:targetApi="31">
         <activity
+            android:name=".Orderdetails"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDetailsWithTrash"
+            android:exported="false" />
+        <activity
+            android:name=".Payments"
+            android:exported="false" />
+        <activity
+            android:name=".YourOrders"
+            android:exported="false" />
+        <activity
             android:name=".RateFood"
             android:exported="false" />
         <activity

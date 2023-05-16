@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="359dp"
+            android:layout_height="202dp"
+            android:src="@drawable/icon_home_fruit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:lineHeight="45dp"
+            android:layout_marginTop="70dp"
+            android:id="@+id/sub_congrats"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/bentonbold"
+            android:text="Find Your Favorite Food"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.button.MaterialButton
+
+            app:iconTint="@color/ui_color"
+            app:icon="@drawable/baseline_notifications_24"
+            app:iconGravity="textTop"
+            android:text="test"
+            app:iconSize="@android:"
+            android:id="@+id/google"
+            android:layout_width="60dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="77dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#252525"
+            android:paddingLeft="37dp"
+            android:paddingTop="40dp"
+            android:paddingRight="37dp"
+            android:paddingBottom="20dp"
+            android:textSize="19dp"
+            app:cornerRadius="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sub_congrats" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/user_Password"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bentonregular"
+            android:hint="What do you want to order?"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="#555050"
+            app:startIconDrawable="@drawable/search"
+            app:startIconTint="@color/white"
+            app:hintTextColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sub_congrats">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:background="@drawable/edt_input"
+                android:cursorVisible="false"
+                android:fontFamily="@font/bentonregular"
+                android:paddingStart="20dp"
+                android:textColor="#92929D"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/setting"
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="#252525"
+            android:fontFamily="@font/bentosanmedium"
+            android:gravity="start"
+            android:paddingLeft="37dp"
+            android:paddingTop="20dp"
+            android:paddingRight="37dp"
+            android:paddingBottom="20dp"
+            android:textSize="19dp"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sub_congrats" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="#2B2A2A"
+            android:backgroundTint="#2B2A2A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_Password"
+            card_view:cardCornerRadius="22dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="#2B2A2A"
+
+                android:backgroundTint="#2B2A2A">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:background="#2B2A2A"
+                    android:backgroundTint="#2B2A2A"
+                    app:cardCornerRadius="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#2B2A2A">
+
+                        <ImageView
+                            android:id="@+id/img_item_photo"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            card_view:layout_constraintBottom_toBottomOf="parent"
+                            card_view:layout_constraintStart_toStartOf="parent"
+                            card_view:layout_constraintTop_toTopOf="parent"
+                            tools:src="@tools:sample/avatars" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="Spacy fresh crab"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17.5dp"
+                    app:layout_constraintStart_toEndOf="@+id/card_view4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iconmaps"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="25dp"
+                    app:layout_constraintStart_toEndOf="@id/card_view4"
+                    app:layout_constraintTop_toBottomOf="@id/Green"
+                    android:src="@drawable/Iconmaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/Noodle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="6dp"
+
+                    android:fontFamily="@font/bentonregular"
+                    android:text="25 minutes on the way"
+                    android:textColor="#3B3B3B"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@+id/iconmaps"
+                    app:layout_constraintTop_toBottomOf="@+id/Green" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/setLocButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/ui_color"
+            android:fontFamily="@font/bentonbold"
+            android:paddingLeft="55dp"
+            android:paddingRight="55dp"
+
+            android:text="Set Location"
+            android:textSize="14dp"
+            app:cornerRadius="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
