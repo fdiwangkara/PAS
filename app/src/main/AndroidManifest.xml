@@ -85,9 +85,6 @@
             android:name=".OnBoardingActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailActivity"
-            android:exported="false" />
-        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity

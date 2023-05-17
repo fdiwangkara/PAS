@@ -44,7 +44,7 @@
             app:icon="@drawable/baseline_notifications_24"
             app:iconGravity="textTop"
             android:text="test"
-            app:iconSize="@android:"
+            app:iconSize="25dp"
             android:id="@+id/google"
             android:layout_width="60dp"
             android:layout_height="67dp"
