@@ -176,13 +176,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
-                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/bentosanmedium"
                     android:text="Spacy fresh crab"
                     android:textColor="#FFFFFF"
                     android:textSize="17.5dp"
                     app:layout_constraintStart_toEndOf="@+id/card_view4"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="@+id/card_view4" />
 
                 <ImageView
                     android:id="@+id/iconmaps"
@@ -207,6 +206,312 @@
                     android:textSize="13dp"
                     app:layout_constraintStart_toEndOf="@+id/iconmaps"
                     app:layout_constraintTop_toBottomOf="@+id/Green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="$ 29"
+                    android:textColor="@color/ui_color"
+                    android:textSize="19dp"
+                    app:layout_constraintStart_toStartOf="@+id/Green"
+                    app:layout_constraintTop_toBottomOf="@id/Noodle"
+                    android:layout_marginTop="10dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/martabakManis"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="#2B2A2A"
+            android:backgroundTint="#2B2A2A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_view3"
+            card_view:cardCornerRadius="22dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="#2B2A2A"
+
+                android:backgroundTint="#2B2A2A">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/foodCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:background="#2B2A2A"
+                    android:backgroundTint="#2B2A2A"
+                    app:cardCornerRadius="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#2B2A2A">
+
+                        <ImageView
+                            android:id="@+id/foodPhoto"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            card_view:layout_constraintBottom_toBottomOf="parent"
+                            card_view:layout_constraintStart_toStartOf="parent"
+                            card_view:layout_constraintTop_toTopOf="parent"
+                            tools:src="@tools:sample/avatars" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/foodName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="Martabak Manis"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17.5dp"
+                    app:layout_constraintStart_toEndOf="@+id/foodCard"
+                    app:layout_constraintTop_toTopOf="@+id/foodCard" />
+
+                <ImageView
+                    android:id="@+id/iconmaps2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="25dp"
+                    app:layout_constraintStart_toEndOf="@id/foodCard"
+                    app:layout_constraintTop_toBottomOf="@id/foodName2"
+                    android:src="@drawable/Iconmaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/otw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="6dp"
+
+                    android:fontFamily="@font/bentonregular"
+                    android:text="12 minutes on the way"
+                    android:textColor="#3B3B3B"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@+id/iconmaps2"
+                    app:layout_constraintTop_toBottomOf="@+id/foodName2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="$ 12"
+                    android:textColor="@color/ui_color"
+                    android:textSize="19dp"
+                    app:layout_constraintStart_toStartOf="@+id/foodName2"
+                    app:layout_constraintTop_toBottomOf="@id/otw"
+                    android:layout_marginTop="10dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nasiGoreng"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="#2B2A2A"
+            android:backgroundTint="#2B2A2A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/martabakManis"
+            card_view:cardCornerRadius="22dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="#2B2A2A"
+
+                android:backgroundTint="#2B2A2A">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/foodCard3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:background="#2B2A2A"
+                    android:backgroundTint="#2B2A2A"
+                    app:cardCornerRadius="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#2B2A2A">
+
+                        <ImageView
+                            android:id="@+id/foodPhoto3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            card_view:layout_constraintBottom_toBottomOf="parent"
+                            card_view:layout_constraintStart_toStartOf="parent"
+                            card_view:layout_constraintTop_toTopOf="parent"
+                            tools:src="@tools:sample/avatars" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/foodName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="Nasi Goreng"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17.5dp"
+                    app:layout_constraintStart_toEndOf="@+id/foodCard3"
+                    app:layout_constraintTop_toTopOf="@+id/foodCard3" />
+
+
+                <TextView
+                    android:id="@+id/done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+
+                    android:fontFamily="@font/bentonregular"
+                    android:text="Your order finished"
+                    android:textColor="#3B3B3B"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="@+id/foodName3"
+                    app:layout_constraintTop_toBottomOf="@+id/foodName3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="$ 45"
+                    android:textColor="#BEBEBE"
+                    android:textSize="19dp"
+                    app:layout_constraintStart_toStartOf="@+id/foodName3"
+                    app:layout_constraintTop_toBottomOf="@id/done"
+                    android:layout_marginTop="10dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/baksoMalang"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="#2B2A2A"
+            android:backgroundTint="#2B2A2A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nasiGoreng"
+            card_view:cardCornerRadius="22dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="#2B2A2A"
+
+                android:backgroundTint="#2B2A2A">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/foodCard4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:background="#2B2A2A"
+                    android:backgroundTint="#2B2A2A"
+                    app:cardCornerRadius="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#2B2A2A">
+
+                        <ImageView
+                            android:id="@+id/foodPhoto4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            card_view:layout_constraintBottom_toBottomOf="parent"
+                            card_view:layout_constraintStart_toStartOf="parent"
+                            card_view:layout_constraintTop_toTopOf="parent"
+                            tools:src="@tools:sample/avatars" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/foodName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="Bakso Malang"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17.5dp"
+                    app:layout_constraintStart_toEndOf="@+id/foodCard4"
+                    app:layout_constraintTop_toTopOf="@+id/foodCard4" />
+
+
+                <TextView
+                    android:id="@+id/done2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+
+                    android:fontFamily="@font/bentonregular"
+                    android:text="Your order finished"
+                    android:textColor="#3B3B3B"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="@+id/foodName4"
+                    app:layout_constraintTop_toBottomOf="@+id/foodName4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bentosanmedium"
+                    android:text="$ 32"
+                    android:textColor="#BEBEBE"
+                    android:textSize="19dp"
+                    app:layout_constraintStart_toStartOf="@+id/foodName4"
+                    app:layout_constraintTop_toBottomOf="@id/done2"
+                    android:layout_marginTop="10dp"/>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
