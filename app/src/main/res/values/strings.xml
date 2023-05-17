@@ -3,4 +3,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="onBoarding1">Find your Comfort Food here</string>
+    <string name="content_desc">TODO</string>
+    <string name="daffa_jago">Daffa Jago</string>
+    <string name="_25_35_min">25:35 Min</string>
+    <string name="test">test</string>
 </resources>
