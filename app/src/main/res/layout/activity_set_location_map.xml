@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/bentonregular"
-        android:hint="Find Your Location"
+        android:hint="@string/find_your_location"
         android:textColorHighlight="@color/white"
         android:textColorHint="#F2F6F8"
         app:hintTextColor="@color/white"
@@ -38,7 +38,7 @@
             android:paddingStart="20dp"
             android:textColor="#92929D"
             android:textSize="15sp"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="RtlSymmetry,VisualLintTextFieldSize" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -71,12 +71,15 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="25dp"
                 android:fontFamily="@font/bentonregular"
-                android:text="Your Location"
-                android:textSize="16dp"
+                android:text="@string/your_location"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
 
             <ImageView
+
+                android:contentDescription="@string/content_desc"
                 android:id="@+id/deliverImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,18 +90,19 @@
                 app:layout_constraintTop_toBottomOf="@id/headDeliver" />
 
             <TextView
-                android:lineHeight="22.5dp"
                 android:id="@+id/deliverTitle"
                 android:layout_width="256dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/bentosanmedium"
-                android:text="4517 Washington Ave. Manchester, Kentucky 39495"
+                android:lineHeight="22.5dp"
+                android:text="@string/_4517_washington_ave_manchester_kentucky_39495"
                 android:textColor="@color/white"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="@+id/deliverImage"
                 app:layout_constraintStart_toEndOf="@+id/deliverImage"
-                app:layout_constraintTop_toTopOf="@+id/deliverImage" />
+                app:layout_constraintTop_toTopOf="@+id/deliverImage"
+                tools:ignore="TextSizeCheck" />
 
 
             <com.google.android.material.button.MaterialButton
@@ -114,12 +118,13 @@
                 android:paddingLeft="55dp"
                 android:paddingRight="55dp"
 
-                android:text="Set Location"
-                android:textSize="14dp"
+                android:text="@string/set_location"
+                android:textSize="14sp"
                 app:cornerRadius="14dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/deliverTitle" />
+                app:layout_constraintTop_toBottomOf="@+id/deliverTitle"
+                tools:ignore="TextSizeCheck,TextContrastCheck,VisualLintButtonSize" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -14,25 +14,35 @@
         android:layout_height="352dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
+
         <ImageView
+
             android:id="@+id/splash_element"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/splash_icon" />
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/splash_icon"
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
-            android:scaleType="centerCrop"
+
             android:id="@+id/splash_walpaper"
             android:layout_width="430dp"
             android:layout_height="352dp"
-            android:src="@drawable/splashwalpaper" />
+            android:contentDescription="@string/content_desc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splashwalpaper"
+            tools:ignore="ImageContrastCheck" />
     </FrameLayout>
 
 
 
 
     <ImageView
+
+        android:contentDescription="@string/content_desc"
         android:id="@+id/splash_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,9 +56,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/viga"
-        android:text="FoodNinja"
+        android:text="@string/foodninja"
         android:textColor="@color/ui_color"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/splash_logo"
@@ -59,10 +69,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter"
-        android:text="Deliever Favorite Food"
+        android:text="@string/deliever_favorite_food"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/splash_title" />

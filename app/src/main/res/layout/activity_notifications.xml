@@ -11,11 +11,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/main_color">
 
 
         <ImageView
+
+            android:contentDescription="@string/content_desc"
             android:id="@+id/imageView2"
             android:layout_width="359dp"
             android:layout_height="202dp"
@@ -31,12 +33,12 @@
             android:layout_marginStart="30dp"
             android:backgroundTint="#251c13"
             android:layout_marginTop="38dp"
-            android:paddingLeft="45dp"
+            android:paddingStart="45dp"
             android:paddingTop="39.5dp"
-            android:paddingRight="35dp"
+            android:paddingEnd="35dp"
             android:paddingBottom="20dp"
-            android:text="test"
-            android:textSize="19dp"
+            android:text="@string/test"
+            android:textSize="19sp"
             app:cornerRadius="22dp"
             app:icon="@drawable/baseline_arrow_back_ios_24"
             app:iconGravity="textTop"
@@ -50,9 +52,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bentonbold"
-            android:text="Notification"
+            android:text="@string/notification"
             android:textColor="@color/white"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/google"
             android:layout_marginStart="35dp"
@@ -84,31 +86,35 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.38" />
+                    app:layout_constraintVertical_bias="0.38"
+
+                    android:contentDescription="@string/content_desc" />
 
                 <TextView
                     android:id="@+id/orderedTitle"
                     android:layout_width="234dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="your order has been taken by the driver"
+                    android:text="@string/your_order_has_been_taken_by_the_driver"
                     android:textColor="@color/white"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="@+id/orderedImage"
                     app:layout_constraintStart_toEndOf="@+id/orderedImage"
                     app:layout_constraintTop_toTopOf="@+id/orderedImage"
-                    android:layout_marginStart="10dp"/>
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="Recently"
+                    android:text="@string/recently"
                     android:textColor="#7D7D7D"
-                    android:textSize="13dp"
+                    android:textSize="13sp"
                     app:layout_constraintStart_toEndOf="@+id/orderedImage"
                     app:layout_constraintTop_toBottomOf="@+id/orderedTitle"
-                    android:layout_marginStart="10dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -134,6 +140,8 @@
                 android:layout_height="match_parent">
 
                 <ImageView
+
+                    android:contentDescription="@string/content_desc"
                     android:id="@+id/topUpImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -148,25 +156,27 @@
                     android:id="@+id/topUpTitle"
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Top up for $100 was Succsessful"
+                    android:text="@string/top_up_for_100_was_succsessful"
                     android:textColor="@color/white"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="@+id/topUpImage"
                     app:layout_constraintStart_toEndOf="@+id/topUpImage"
                     app:layout_constraintTop_toTopOf="@+id/topUpImage"
-                    android:layout_marginStart="10dp"/>
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="05.36 Pm"
+                    android:text="@string/_05_36_pm"
                     android:textColor="#7D7D7D"
-                    android:textSize="13dp"
+                    android:textSize="13sp"
                     app:layout_constraintStart_toEndOf="@+id/topUpImage"
                     app:layout_constraintTop_toBottomOf="@+id/topUpTitle"
-                    android:layout_marginStart="10dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -192,6 +202,8 @@
                 android:layout_height="match_parent">
 
                 <ImageView
+
+                    android:contentDescription="@string/content_desc"
                     android:id="@+id/canceledImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -206,25 +218,27 @@
                     android:id="@+id/canceledTitle"
                     android:layout_width="234dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Your order has been canceled"
+                    android:text="@string/your_order_has_been_canceled"
                     android:textColor="@color/white"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="@+id/canceledImage"
                     app:layout_constraintStart_toEndOf="@+id/canceledImage"
                     app:layout_constraintTop_toTopOf="@+id/canceledImage"
-                    android:layout_marginStart="10dp"/>
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="20 May 2023"
+                    android:text="@string/_20_may_2023"
                     android:textColor="#7D7D7D"
-                    android:textSize="13dp"
+                    android:textSize="13sp"
                     app:layout_constraintStart_toEndOf="@+id/canceledImage"
                     app:layout_constraintTop_toBottomOf="@+id/canceledTitle"
-                    android:layout_marginStart="10dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

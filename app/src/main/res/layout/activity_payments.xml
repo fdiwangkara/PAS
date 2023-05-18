@@ -11,11 +11,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/main_color">
 
 
         <ImageView
+
+            android:contentDescription="@string/content_desc"
             android:id="@+id/imageView2"
             android:layout_width="359dp"
             android:layout_height="202dp"
@@ -29,30 +31,31 @@
             android:layout_height="67dp"
             android:layout_gravity="center"
             android:layout_marginStart="30dp"
-            android:backgroundTint="#251c13"
             android:layout_marginTop="38dp"
-            android:paddingLeft="45dp"
+            android:backgroundTint="#251c13"
+            android:paddingStart="45dp"
             android:paddingTop="39.5dp"
-            android:paddingRight="35dp"
+            android:paddingEnd="35dp"
             android:paddingBottom="20dp"
-            android:text="test"
-            android:textSize="19dp"
+            android:text="@string/test"
+            android:textSize="19sp"
             app:cornerRadius="22dp"
             app:icon="@drawable/baseline_arrow_back_ios_24"
             app:iconGravity="textTop"
             app:iconSize="25dp"
             app:iconTint="#ba6317"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck" />
 
         <TextView
                 android:id="@+id/paymentTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bentonbold"
-            android:text="Confirm Order"
+            android:text="@string/confirm_order"
             android:textColor="@color/white"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/google"
             android:layout_marginStart="35dp"
@@ -60,16 +63,17 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/deliverLoc"
-            card_view:cardCornerRadius="22dp"
             android:layout_width="360dp"
             android:layout_height="141dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:background="#252525"
             android:backgroundTint="#80252525"
-            app:layout_constraintTop_toBottomOf="@id/paymentTitle" >
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/paymentTitle"
+            card_view:cardCornerRadius="22dp"
+            tools:ignore="TextSizeCheck">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -79,18 +83,21 @@
                     android:id="@+id/headDeliver"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="Deliver To"
+                    android:text="@string/deliver_to"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="20dp"/>
+                    tools:ignore="TextContrastCheck" />
 
                 <ImageView
+
                     android:id="@+id/deliverImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
+                    android:contentDescription="@string/content_desc"
                     android:src="@drawable/setloc"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -102,27 +109,26 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Jl. Abdul Rahman Saleh, Malang Selatan"
+                    android:text="@string/jl_abdul_rahman_saleh_malang_selatan"
                     android:textColor="@color/white"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="@+id/deliverImage"
                     app:layout_constraintStart_toEndOf="@+id/deliverImage"
-                    app:layout_constraintTop_toTopOf="@+id/deliverImage" />
+                    app:layout_constraintTop_toTopOf="@+id/deliverImage"
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="Edit"
+                    android:text="@string/edit"
                     android:textColor="@color/ui_color"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="30dp"/>
-
-
-
+                    tools:ignore="TextSizeCheck" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -132,16 +138,17 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/paymentMethod"
-            card_view:cardCornerRadius="22dp"
             android:layout_width="360dp"
             android:layout_height="120dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:background="#252525"
             android:backgroundTint="#80252525"
-            app:layout_constraintTop_toBottomOf="@id/deliverLoc" >
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/deliverLoc"
+            card_view:cardCornerRadius="22dp"
+            tools:ignore="TextSizeCheck">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -151,22 +158,26 @@
                     android:id="@+id/headPayment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="Payment Method"
+                    android:text="@string/payment_method"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="20dp"/>
+                    tools:ignore="TextContrastCheck" />
 
                 <ImageView
+
                     android:id="@+id/gopayImage"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="20dp"
+                    android:contentDescription="@string/content_desc"
                     android:src="@drawable/gopay_logo"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/methodTitle"
@@ -174,37 +185,38 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/bentonbold"
-                    android:text="gopay"
+                    android:text="@string/gopay"
                     android:textColor="@color/white"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="@+id/gopayImage"
                     app:layout_constraintStart_toEndOf="@+id/gopayImage"
-                    app:layout_constraintTop_toTopOf="@+id/gopayImage" />
+                    app:layout_constraintTop_toTopOf="@+id/gopayImage"
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="Edit"
+                    android:text="@string/edit"
                     android:textColor="@color/ui_color"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="30dp"/>
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="+62 6383 8xxx xxxx"
+                    android:text="@string/_62_6383_8xxx_xxxx"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/methodTitle"
-                    android:layout_marginEnd="40dp"/>
-
-
+                    tools:ignore="TextSizeCheck" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -238,62 +250,66 @@
                     android:fontFamily="@font/bentonbold"
                     android:paddingLeft="55dp"
                     android:paddingRight="55dp"
-                    android:text="Place my order"
+                    android:text="@string/place_my_order"
                     android:textColor="@color/ui_color"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:cornerRadius="14dp"
                     android:layout_marginBottom="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <TextView
                     android:id="@+id/subTotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Sub-total"
+                    android:text="@string/sub_total"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginStart="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/deliverCharge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Delivery Charge"
+                    android:text="@string/delivery_charge"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/subTotal"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginStart="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/discount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Discount"
+                    android:text="@string/discount"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/deliverCharge"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginStart="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/total"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bentonbold"
-                    android:text="Total"
+                    android:text="@string/total"
                     android:textColor="@color/white"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/discount"
                     android:layout_marginTop="50dp"
@@ -304,26 +320,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="120 $"
+                    android:text="@string/_120"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginEnd="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/dollar2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="10 $"
+                    android:text="@string/_10"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/dollar1"
-                    android:layout_marginEnd="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/dollar4"
@@ -331,9 +349,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
                     android:fontFamily="@font/bentonbold"
-                    android:text="150 $"
+                    android:text="@string/_150"
                     android:textColor="@color/white"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/discount"
                     android:layout_marginEnd="20dp"/>

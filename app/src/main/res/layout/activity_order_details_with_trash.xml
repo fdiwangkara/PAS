@@ -11,11 +11,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/main_color">
 
 
         <ImageView
+            android:contentDescription="@string/content_desc"
             android:id="@+id/imageView2"
             android:layout_width="359dp"
             android:layout_height="202dp"
@@ -29,30 +30,31 @@
             android:layout_height="67dp"
             android:layout_gravity="center"
             android:layout_marginStart="30dp"
-            android:backgroundTint="#251c13"
             android:layout_marginTop="38dp"
-            android:paddingLeft="45dp"
+            android:backgroundTint="#251c13"
+            android:paddingStart="45dp"
             android:paddingTop="39.5dp"
-            android:paddingRight="35dp"
+            android:paddingEnd="35dp"
             android:paddingBottom="20dp"
-            android:text="test"
-            android:textSize="19dp"
+            android:text="@string/test"
+            android:textSize="19sp"
             app:cornerRadius="22dp"
             app:icon="@drawable/baseline_arrow_back_ios_24"
             app:iconGravity="textTop"
             app:iconSize="25dp"
             app:iconTint="#ba6317"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck,DuplicateSpeakableTextCheck" />
 
         <TextView
             android:id="@+id/orderDetailTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bentonbold"
-            android:text="Order Details"
+            android:text="@string/order_details"
             android:textColor="@color/white"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/google"
             android:layout_marginStart="35dp"
@@ -101,6 +103,8 @@
                         android:background="#2B2A2A">
 
                         <ImageView
+
+                            android:contentDescription="@string/content_desc"
                             android:id="@+id/img_item_photo"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
@@ -118,11 +122,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Spacy fresh crab"
+                    android:text="@string/spacy_fresh_crab"
                     android:textColor="#FFFFFF"
-                    android:textSize="17.5dp"
+                    android:textSize="17.5sp"
                     app:layout_constraintStart_toEndOf="@+id/card_view4"
-                    app:layout_constraintTop_toTopOf="@+id/card_view4" />
+                    app:layout_constraintTop_toTopOf="@+id/card_view4"
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/foodPlace1"
@@ -130,22 +135,24 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="Waroenk Madura"
+                    android:text="@string/waroenk_madura"
                     android:textColor="#3B3B3B"
-                    android:textSize="13dp"
+                    android:textSize="13sp"
                     app:layout_constraintStart_toStartOf="@+id/Green"
-                    app:layout_constraintTop_toBottomOf="@+id/Green" />
+                    app:layout_constraintTop_toBottomOf="@+id/Green"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="$ 29"
+                    android:text="@string/_29"
                     android:textColor="@color/ui_color"
-                    android:textSize="19dp"
+                    android:textSize="19sp"
                     app:layout_constraintStart_toStartOf="@+id/Green"
                     app:layout_constraintTop_toBottomOf="@id/foodPlace1"
-                    android:layout_marginTop="10dp"/>
+                    tools:ignore="TextSizeCheck" />
 
                 <com.google.android.material.button.MaterialButton
 
@@ -153,13 +160,14 @@
                     android:layout_width="30dp"
                     android:layout_height="37dp"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/ui_color"
                     android:paddingLeft="37dp"
                     android:paddingTop="40dp"
                     android:paddingRight="37dp"
                     android:paddingBottom="20dp"
-                    android:text="test"
-                    android:textSize="19dp"
+                    android:text="@string/test"
+                    android:textSize="19sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/plus_button"
                     app:iconGravity="textTop"
@@ -168,7 +176,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginEnd="10dp"/>
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
 
                 <com.google.android.material.button.MaterialButton
 
@@ -176,34 +184,36 @@
                     android:layout_width="30dp"
                     android:layout_height="37dp"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="75dp"
                     android:backgroundTint="#2253E88B"
                     android:paddingLeft="37dp"
                     android:paddingTop="40dp"
                     android:paddingRight="37dp"
                     android:paddingBottom="20dp"
-                    android:text="test"
-                    android:textSize="19dp"
+                    android:text="@string/test"
+                    android:textSize="19sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/minus_button"
-                    app:iconSize="@android:"
                     app:iconGravity="textTop"
+                    app:iconSize="@android:"
                     app:iconTint="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@id/plus"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginEnd="75dp"/>
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="1"
+                    android:text="@string/_1"
                     android:textColor="@color/white"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/plus"
                     app:layout_constraintStart_toEndOf="@+id/minus"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextSizeCheck" />
 
 
 
@@ -253,6 +263,8 @@
                         android:background="#2B2A2A">
 
                         <ImageView
+                            android:contentDescription="@string/content_desc"
+
                             android:id="@+id/photoCover"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
@@ -270,11 +282,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Martabak Manis"
+                    android:text="@string/martabak_manis"
                     android:textColor="#FFFFFF"
-                    android:textSize="17.5dp"
+                    android:textSize="17.5sp"
                     app:layout_constraintStart_toEndOf="@+id/foodImage"
-                    app:layout_constraintTop_toTopOf="@+id/foodImage" />
+                    app:layout_constraintTop_toTopOf="@+id/foodImage"
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/foodPlace2"
@@ -282,11 +295,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="Waroenk Madura"
+                    android:text="@string/waroenk_madura"
                     android:textColor="#3B3B3B"
-                    android:textSize="13dp"
+                    android:textSize="13sp"
                     app:layout_constraintStart_toStartOf="@+id/namefood"
-                    app:layout_constraintTop_toBottomOf="@+id/namefood" />
+                    app:layout_constraintTop_toBottomOf="@+id/namefood"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -294,11 +308,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="$ 29"
+                    android:text="@string/_29"
                     android:textColor="@color/ui_color"
-                    android:textSize="19dp"
+                    android:textSize="19sp"
                     app:layout_constraintStart_toStartOf="@+id/namefood"
-                    app:layout_constraintTop_toBottomOf="@id/foodPlace2" />
+                    app:layout_constraintTop_toBottomOf="@id/foodPlace2"
+                    tools:ignore="TextSizeCheck" />
 
                 <com.google.android.material.button.MaterialButton
 
@@ -306,13 +321,14 @@
                     android:layout_width="30dp"
                     android:layout_height="37dp"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/ui_color"
                     android:paddingLeft="37dp"
                     android:paddingTop="40dp"
                     android:paddingRight="37dp"
                     android:paddingBottom="20dp"
-                    android:text="test"
-                    android:textSize="19dp"
+                    android:text="@string/test"
+                    android:textSize="19sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/plus_button"
                     app:iconGravity="textTop"
@@ -321,7 +337,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginEnd="10dp"/>
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
 
                 <com.google.android.material.button.MaterialButton
 
@@ -329,13 +345,14 @@
                     android:layout_width="30dp"
                     android:layout_height="37dp"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="75dp"
                     android:backgroundTint="#2253E88B"
                     android:paddingLeft="37dp"
                     android:paddingTop="40dp"
                     android:paddingRight="37dp"
                     android:paddingBottom="20dp"
-                    android:text="test"
-                    android:textSize="19dp"
+                    android:text="@string/test"
+                    android:textSize="19sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/minus_button"
                     app:iconGravity="textTop"
@@ -344,19 +361,20 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@id/plus2"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginEnd="75dp"/>
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="1"
+                    android:text="@string/_1"
                     android:textColor="@color/white"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/plus2"
                     app:layout_constraintStart_toEndOf="@+id/minus2"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextSizeCheck" />
 
 
 
@@ -406,6 +424,8 @@
                         android:background="#2B2A2A">
 
                         <ImageView
+
+                            android:contentDescription="@string/content_desc"
                             android:id="@+id/photoCover2"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
@@ -413,6 +433,7 @@
                             card_view:layout_constraintBottom_toBottomOf="parent"
                             card_view:layout_constraintStart_toStartOf="parent"
                             card_view:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ImageContrastCheck"
                             tools:src="@tools:sample/avatars" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
@@ -423,11 +444,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Bakso Malang"
+                    android:text="@string/bakso_malang"
                     android:textColor="#FFFFFF"
-                    android:textSize="17.5dp"
+                    android:textSize="17.5sp"
                     app:layout_constraintStart_toEndOf="@+id/foodImage2"
-                    app:layout_constraintTop_toTopOf="@+id/foodImage2" />
+                    app:layout_constraintTop_toTopOf="@+id/foodImage2"
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/foodPlace3"
@@ -435,11 +457,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="Waroenk Madura"
+                    android:text="@string/waroenk_madura"
                     android:textColor="#3B3B3B"
-                    android:textSize="13dp"
+                    android:textSize="13sp"
                     app:layout_constraintStart_toStartOf="@+id/namefood2"
-                    app:layout_constraintTop_toBottomOf="@+id/namefood2" />
+                    app:layout_constraintTop_toBottomOf="@+id/namefood2"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -447,11 +470,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="$ 29"
+                    android:text="@string/_29"
                     android:textColor="@color/ui_color"
-                    android:textSize="19dp"
+                    android:textSize="19sp"
                     app:layout_constraintStart_toStartOf="@+id/namefood2"
-                    app:layout_constraintTop_toBottomOf="@id/foodPlace3" />
+                    app:layout_constraintTop_toBottomOf="@id/foodPlace3"
+                    tools:ignore="TextSizeCheck" />
 
                 <com.google.android.material.button.MaterialButton
 
@@ -459,13 +483,14 @@
                     android:layout_width="30dp"
                     android:layout_height="37dp"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/ui_color"
                     android:paddingLeft="37dp"
                     android:paddingTop="40dp"
                     android:paddingRight="37dp"
                     android:paddingBottom="20dp"
-                    android:text="test"
-                    android:textSize="19dp"
+                    android:text="@string/test"
+                    android:textSize="19sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/plus_button"
                     app:iconGravity="textTop"
@@ -474,7 +499,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginEnd="10dp"/>
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
 
                 <com.google.android.material.button.MaterialButton
 
@@ -482,13 +507,14 @@
                     android:layout_width="30dp"
                     android:layout_height="37dp"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="75dp"
                     android:backgroundTint="#2253E88B"
                     android:paddingLeft="37dp"
                     android:paddingTop="40dp"
                     android:paddingRight="37dp"
                     android:paddingBottom="20dp"
-                    android:text="test"
-                    android:textSize="19dp"
+                    android:text="@string/test"
+                    android:textSize="19sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/minus_button"
                     app:iconGravity="textTop"
@@ -497,25 +523,25 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@id/plus1"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginEnd="75dp"/>
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="1"
+                    android:text="@string/_1"
                     android:textColor="@color/white"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/plus1"
                     app:layout_constraintStart_toEndOf="@+id/minus1"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextSizeCheck" />
 
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
 
 
         <androidx.cardview.widget.CardView
@@ -527,7 +553,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/orderCard3"
-            card_view:cardCornerRadius="22.5dp">
+            card_view:cardCornerRadius="22.5dp"
+            tools:ignore="TextSizeCheck">
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -539,110 +566,117 @@
                     android:layout_width="325dp"
                     android:layout_height="57dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="10dp"
                     android:backgroundTint="@color/white"
                     android:fontFamily="@font/bentonbold"
                     android:paddingLeft="55dp"
                     android:paddingRight="55dp"
-                    android:text="Place my order"
+                    android:text="@string/place_my_order"
                     android:textColor="@color/ui_color"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:cornerRadius="14dp"
-                    android:layout_marginBottom="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextSizeCheck,TextContrastCheck,VisualLintButtonSize" />
 
                 <TextView
                     android:id="@+id/subTotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Sub-total"
+                    android:text="@string/sub_total"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginStart="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/deliverCharge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Delivery Charge"
+                    android:text="@string/delivery_charge"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/subTotal"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginStart="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/discount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Discount"
+                    android:text="@string/discount"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/deliverCharge"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginStart="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/total"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
                     android:fontFamily="@font/bentonbold"
-                    android:text="Total"
+                    android:text="@string/total"
                     android:textColor="@color/white"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/discount"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginStart="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/dollar1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="120 $"
+                    android:text="@string/_120"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginEnd="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/dollar2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="10 $"
+                    android:text="@string/_10"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/dollar1"
-                    android:layout_marginEnd="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/dollar4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
+                    android:layout_marginEnd="20dp"
                     android:fontFamily="@font/bentonbold"
-                    android:text="150 $"
+                    android:text="@string/_150"
                     android:textColor="@color/white"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="@+id/nextLast"
                     app:layout_constraintTop_toTopOf="@id/discount"
-                    android:layout_marginEnd="20dp"/>
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -651,7 +685,5 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

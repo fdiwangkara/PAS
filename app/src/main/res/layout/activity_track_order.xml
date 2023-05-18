@@ -11,7 +11,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/white">
 
 
@@ -24,12 +24,12 @@
             android:layout_marginStart="30dp"
             android:backgroundTint="#251c13"
             android:layout_marginTop="38dp"
-            android:paddingLeft="45dp"
+            android:paddingStart="45dp"
             android:paddingTop="39.5dp"
-            android:paddingRight="35dp"
+            android:paddingEnd="35dp"
             android:paddingBottom="20dp"
-            android:text="test"
-            android:textSize="19dp"
+            android:text="@string/test"
+            android:textSize="19sp"
             app:cornerRadius="22dp"
             app:icon="@drawable/baseline_arrow_back_ios_24"
             app:iconGravity="textTop"
@@ -66,6 +66,8 @@
 
 
             <ImageView
+
+                android:contentDescription="@string/content_desc"
                 android:id="@+id/splash_element"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -81,9 +83,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="25dp"
                 android:fontFamily="@font/bentonbold"
-                android:text="Track Order"
+                android:text="@string/track_order"
                 android:textColor="@color/white"
-                android:textSize="19dp"
+                android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -132,16 +134,19 @@
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="#2B2A2A">
+                                android:background="#2B2A2A"
+                                tools:ignore="TooDeepLayout">
 
                                 <ImageView
                                     android:id="@+id/img_item_photo"
                                     android:layout_width="80dp"
                                     android:layout_height="80dp"
+                                    android:contentDescription="@string/content_desc"
                                     android:scaleType="centerCrop"
                                     card_view:layout_constraintBottom_toBottomOf="parent"
                                     card_view:layout_constraintStart_toStartOf="parent"
                                     card_view:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="ImageContrastCheck"
                                     tools:src="@tools:sample/avatars" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </androidx.cardview.widget.CardView>
@@ -153,13 +158,15 @@
                             android:layout_marginStart="25dp"
                             android:layout_marginTop="30dp"
                             android:fontFamily="@font/bentosanmedium"
-                            android:text="Green Noddle"
+                            android:text="@string/green_noddle"
                             android:textColor="#FFFFFF"
-                            android:textSize="17.5dp"
+                            android:textSize="17.5sp"
                             app:layout_constraintStart_toEndOf="@+id/card_view4"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
+
+                            android:contentDescription="@string/content_desc"
                             android:id="@+id/iconmaps"
                             android:layout_marginTop="8dp"
                             android:layout_marginStart="25dp"
@@ -177,11 +184,12 @@
                             android:layout_marginTop="6dp"
 
                             android:fontFamily="@font/bentonregular"
-                            android:text="25 minutes on the way"
+                            android:text="@string/_25_minutes_on_the_way"
                             android:textColor="#3B3B3B"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             app:layout_constraintStart_toEndOf="@+id/iconmaps"
-                            app:layout_constraintTop_toBottomOf="@+id/Green" />
+                            app:layout_constraintTop_toBottomOf="@+id/Green"
+                            tools:ignore="TextSizeCheck,TextContrastCheck" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -191,20 +199,21 @@
 
             <com.google.android.material.button.MaterialButton
 
-                android:layout_marginStart="11dp"
-                android:layout_marginTop="185dp"
                 android:id="@+id/nextLast"
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="185dp"
                 android:backgroundTint="@color/ui_color"
                 android:fontFamily="@font/bentonbold"
                 android:paddingLeft="55dp"
                 android:paddingTop="32dp"
-                android:paddingBottom="32dp"
                 android:paddingRight="55dp"
-                android:text="Next"
-                android:textSize="20dp"
-                app:cornerRadius="22dp"/>
+                android:paddingBottom="32dp"
+                android:text="@string/next"
+                android:textSize="20sp"
+                app:cornerRadius="22dp"
+                tools:ignore="TextContrastCheck" />
 
             <com.google.android.material.button.MaterialButton
 
@@ -214,14 +223,16 @@
                 android:layout_marginStart="260dp"
                 android:layout_marginTop="185dp"
                 android:backgroundTint="#252525"
+                android:contentDescription="@string/content_desc"
                 android:fontFamily="@font/bentosanmedium"
 
                 android:paddingLeft="37dp"
                 android:paddingTop="20dp"
                 android:paddingRight="37dp"
                 android:paddingBottom="20dp"
-                android:textSize="19dp"
-                app:cornerRadius="22dp" />
+                android:textSize="19sp"
+                app:cornerRadius="22dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
 
         </FrameLayout>

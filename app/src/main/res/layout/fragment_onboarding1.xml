@@ -8,51 +8,56 @@
     android:background="@color/main_color">
 
     <ImageView
+
+        android:contentDescription="@string/content_desc"
         android:layout_marginTop="70dp"
         android:src="@drawable/onboarding_1"
         android:layout_width="408.5dp"
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:lineHeight="37dp"
-        android:layout_marginTop="100dp"
-        android:textAlignment="center"
-        android:layout_gravity="center"
-        android:textSize="27dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/bentonbold"
-        android:text="@string/onBoarding1"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/bentonbold"
+        android:lineHeight="37dp"
+        android:text="@string/onBoarding1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/onboarding_subtitle"
         android:layout_width="244dp"
         android:layout_height="wrap_content"
-        android:text="Here You can Find a Chef or Dish for every taste and color. Enjoy!"
-        android:fontFamily="@font/bentonbook"
-        android:textAlignment="center"
-        android:textSize="12dp"
-        android:lineHeight="22sp"
-        android:textColor="@color/white"
         android:layout_gravity="center"
-        android:layout_marginTop="175dp" />
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/bentonbook"
+        android:lineHeight="22sp"
+        android:text="@string/here_you_can_find_a_chef_or_dish_for_every_taste_and_color_enjoy"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        tools:ignore="TextSizeCheck" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/next"
-        android:layout_gravity="center"
-        android:fontFamily="@font/bentonbold"
-        android:textSize="20dp"
-        android:layout_marginTop="330dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingLeft="55dp"
-        android:paddingRight="55dp"
-        android:text="Next"
-        app:cornerRadius="14dp"
-        android:backgroundTint="@color/ui_color"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="330dp"
+        android:backgroundTint="@color/ui_color"
+        android:fontFamily="@font/bentonbold"
+        android:paddingLeft="55dp"
+        android:paddingTop="20dp"
+        android:paddingRight="55dp"
+        android:paddingBottom="20dp"
+        android:text="@string/next"
+        android:textSize="20sp"
+        app:cornerRadius="14dp"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
 
 </FrameLayout>

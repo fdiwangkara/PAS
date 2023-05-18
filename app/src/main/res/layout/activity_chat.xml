@@ -11,15 +11,18 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/main_color">
 
 
         <ImageView
+
+            android:contentDescription="@string/content_desc"
             android:id="@+id/imageView2"
             android:layout_width="359dp"
             android:layout_height="202dp"
             android:src="@drawable/icon_home_fruit"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,30 +32,31 @@
             android:layout_height="67dp"
             android:layout_gravity="center"
             android:layout_marginStart="30dp"
-            android:backgroundTint="#251c13"
             android:layout_marginTop="38dp"
-            android:paddingLeft="45dp"
+            android:backgroundTint="#251c13"
+            android:paddingStart="45dp"
             android:paddingTop="39.5dp"
-            android:paddingRight="35dp"
+            android:paddingEnd="35dp"
             android:paddingBottom="20dp"
-            android:text="test"
-            android:textSize="19dp"
+            android:text="@string/test"
+            android:textSize="19sp"
             app:cornerRadius="22dp"
             app:icon="@drawable/baseline_arrow_back_ios_24"
             app:iconGravity="textTop"
             app:iconSize="25dp"
             app:iconTint="#ba6317"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck" />
 
         <TextView
             android:id="@+id/setTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bentonbold"
-            android:text="Chat"
+            android:text="@string/chat"
             android:textColor="@color/white"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/google"
             android:layout_marginStart="35dp"
@@ -77,9 +81,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#00252525"
-                android:padding="8dp" >
+                android:padding="8dp"
+                tools:ignore="ExtraText">
 
                 <ImageView
+
+                    android:contentDescription="@string/content_desc"
                     android:id="@+id/img_item_photo"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -88,6 +95,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintStart_toStartOf="parent"
                     card_view:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck"
                     tools:src="@tools:sample/avatars" />
 
                 <TextView
@@ -97,7 +105,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/bentosanmedium"
-                    android:text="Dafjag"
+                    android:text="@string/daffa_jago"
                     android:textColor="#FFFFFF"
                     app:layout_constraintStart_toEndOf="@+id/img_item_photo"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -109,7 +117,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="7dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="Halo daffa! kamu dewa banget"
+                    android:text="@string/halo_daffa_kamu_dewa_banget"
                     android:textColor="#848484"
                     app:layout_constraintStart_toEndOf="@+id/img_item_photo"
                     app:layout_constraintTop_toBottomOf="@+id/contactName" />
@@ -121,7 +129,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
                     android:fontFamily="@font/bentonregular"
-                    android:text="20:00"
+                    android:text="@string/_20_00"
                     android:textColor="#848484"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />" />

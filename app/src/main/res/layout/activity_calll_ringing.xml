@@ -16,13 +16,17 @@
         android:layout_height="352dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
         <ImageView
+            android:contentDescription="@string/content_desc"
             android:id="@+id/splash_element"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/splash_icon" />
         <ImageView
+
+            android:contentDescription="@string/content_desc"
             android:id="@+id/splash_walpaper"
             android:layout_width="430dp"
             android:layout_height="352dp"
@@ -50,6 +54,8 @@
             android:layout_height="match_parent">
 
             <ImageView
+
+                android:contentDescription="@string/content_desc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -68,26 +74,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bentonbold"
-        android:text="Daffa Jago"
+        android:text="@string/daffa_jago"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/bentonregular"
-        android:text="Ringing...."
+        android:text="@string/ringing"
         android:textColor="@color/white"
-        android:textSize="19dp"
+        android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/callerName"
-        android:layout_marginTop="20dp"/>
+        tools:ignore="TextSizeCheck" />
 
     <com.google.android.material.button.MaterialButton
 
@@ -95,23 +103,25 @@
         android:layout_width="80dp"
         android:layout_height="87dp"
         android:layout_gravity="center"
+        android:layout_marginStart="-100dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#2253E88B"
         android:paddingLeft="37dp"
         android:paddingTop="40dp"
         android:paddingRight="37dp"
         android:paddingBottom="20dp"
-        android:text="test"
-        android:textSize="19dp"
+        android:text="@string/test"
+        android:textColor="#00796B"
+        android:textSize="19sp"
         app:cornerRadius="100dp"
         app:icon="@drawable/volume_up"
         app:iconGravity="textTop"
-        app:iconSize="@android:"
+        app:iconSize="20dp"
         app:iconTint="@color/ui_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="50dp"
-        android:layout_marginStart="-100dp"/>
+        tools:ignore="TextSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
 
@@ -119,26 +129,26 @@
         android:layout_width="80dp"
         android:layout_height="87dp"
         android:layout_gravity="center"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#ff0000"
         android:paddingLeft="37dp"
         android:paddingTop="40dp"
         android:paddingRight="37dp"
         android:paddingBottom="20dp"
-        android:text="test"
-        android:textSize="19dp"
+        android:text="@string/test"
+        android:textSize="19sp"
         app:cornerRadius="100dp"
         app:icon="@drawable/hang_up"
         app:iconGravity="textTop"
-        app:iconSize="@android:"
+        app:iconSize="20dp"
         app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="50dp"
-        android:layout_marginStart="100dp"/>
+        tools:ignore="TextSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-\

@@ -14,15 +14,20 @@
         android:layout_height="352dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
 
         <ImageView
+
+            android:contentDescription="@string/content_desc"
             android:id="@+id/splash_element"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/splash_icon" />
 
         <ImageView
+
+            android:contentDescription="@string/content_desc"
             android:id="@+id/splash_walpaper"
             android:layout_width="430dp"
             android:layout_height="352dp"
@@ -30,6 +35,8 @@
             android:src="@drawable/splashwalpaper" />
 
         <ImageView
+
+            android:contentDescription="@string/content_desc"
             android:id="@+id/splash_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,9 +55,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="175dp"
             android:fontFamily="@font/viga"
-            android:text="FoodNinja"
+            android:text="@string/foodninja"
             android:textColor="@color/ui_color"
-            android:textSize="40dp"
+            android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/splash_logo" />
@@ -62,13 +69,14 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="225dp"
             android:fontFamily="@font/inter"
-            android:text="Deliever Favorite Food"
+            android:text="@string/deliever_favorite_food"
             android:textColor="@color/white"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/splash_title" />
+            app:layout_constraintTop_toBottomOf="@+id/splash_title"
+            tools:ignore="TextSizeCheck" />
     </FrameLayout>
 
     <TextView
@@ -76,9 +84,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bentonbold"
-        android:text="Sign Up For Free"
+        android:text="@string/sign_up_for_free"
         android:textColor="@color/white"
-        android:textSize="22dp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
@@ -93,7 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bentonregular"
-        android:hint="Username"
+        android:hint="@string/username"
         android:textColorHighlight="@color/white"
         android:textColorHint="#555050"
         app:hintTextColor="@color/white"
@@ -111,7 +119,7 @@
             android:paddingStart="20dp"
             android:textColor="#92929D"
             android:textSize="15sp"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -122,7 +130,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bentonregular"
-        android:hint="Email"
+        android:hint="@string/email"
         android:textColorHighlight="@color/white"
         android:textColorHint="#555050"
         app:hintTextColor="@color/white"
@@ -140,7 +148,7 @@
             android:paddingStart="20dp"
             android:textColor="#92929D"
             android:textSize="15sp"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -152,7 +160,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bentonregular"
-        android:hint="Password"
+        android:hint="@string/password"
         android:textColorHighlight="@color/white"
         android:textColorHint="#555050"
         app:hintTextColor="@color/white"
@@ -169,10 +177,12 @@
             android:paddingStart="20dp"
             android:textColor="#92929D"
             android:textSize="15sp"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
+
+        android:contentDescription="@string/content_desc"
         android:id="@+id/check_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -188,7 +198,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="251dp"
         android:fontFamily="@font/bentonbook"
-        android:text="Keep me Sign in"
+        android:text="@string/keep_me_sign_in"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_pass" />
@@ -199,19 +209,22 @@
         android:layout_marginTop="72dp"
         android:layout_marginEnd="156dp"
         android:fontFamily="@font/bentonbook"
-        android:text="Email me About special Pricing"
+        android:text="@string/email_me_about_special_pricing"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_pass" />
 
     <ImageView
+
+        android:contentDescription="@string/content_desc"
         android:id="@+id/check_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-80dp"
         android:src="@drawable/check_list"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/check_1" />
+        app:layout_constraintTop_toBottomOf="@+id/check_1"
+        tools:ignore="VisualLintBounds" />
 
 
     <com.google.android.material.button.MaterialButton
@@ -226,23 +239,25 @@
         android:paddingTop="20dp"
         android:paddingRight="55dp"
         android:paddingBottom="20dp"
-        android:text="Next"
-        android:textSize="20dp"
+        android:text="@string/next"
+        android:textSize="20sp"
         app:cornerRadius="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_pass" />
+        app:layout_constraintTop_toBottomOf="@+id/user_pass"
+        tools:ignore="VisualLintBounds" />
 
     <TextView
         android:fontFamily="@font/bentosanmedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already Have an Account?"
+        android:text="@string/already_have_an_account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/next"
         android:textColor="@color/ui_color"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        tools:ignore="VisualLintBounds" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
