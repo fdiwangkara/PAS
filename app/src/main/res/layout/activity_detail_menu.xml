@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMenuActivity">
+
+    <FrameLayout
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:background="@drawable/rounded">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_remove_24"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center|top"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/status_popular"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/status_love"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/status_loc"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starbucks Coffee"
+            android:fontFamily="@font/bentonbold"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="90dp"
+            android:layout_marginStart="40dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/status_rating"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5 Rating"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="65dp"
+            android:fontFamily="@font/bentonregular"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shopping_bag"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000+ Orders"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="175dp"
+            android:fontFamily="@font/bentonregular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starbucks adalah warung kopi terkenal yang menawarkan berbagai minuman kopi dan makanan ringan yang cocok untuk aplikasi antar makanan. "
+            android:fontFamily="@font/bentonbook"
+            android:textColor="@color/white"
+            android:layout_gravity="top|start|end"
+            android:layout_marginTop="180dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:lineHeight="22dp"/>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/setLocButton"
+               android:layout_width="match_parent"
+               android:layout_height="80dp"
+               android:layout_gravity="center"
+               android:layout_marginStart="30dp"
+               android:layout_marginEnd="30dp"
+               android:backgroundTint="@color/ui_color"
+               android:fontFamily="@font/bentonbold"
+               android:paddingLeft="55dp"
+               android:paddingRight="55dp"
+               android:layout_marginBottom="20dp"
+               android:text="Add to Cart"
+               android:textSize="14sp"
+               app:cornerRadius="14dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
